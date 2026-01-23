@@ -33,7 +33,7 @@ def zdt3(x):
 
 
 
-def deb4(x):
+def zdt_beta(x):
     x = x.clamp(1e-6, 1 - 1e-6)
     f1 = x[:, 0]
     n = x.size(1)
@@ -54,13 +54,13 @@ def fon(x):
     return f1, f2
 
 
-def oka2(x):
+def mt1(x):
     x = x.clamp(0.0, 1.0)
     x1 = x[:, 0]
     x2 = x[:, 1]
 
     f1 = x1
-    f2 = 1 - x1**2 + 2 * torch.sin(2 * torch.pi * x1) * (x2 - 0.5)**2
+    f2 = 1 - x1**2 +  (x2 - 0.5)**2
     return f1, f2
 
 
