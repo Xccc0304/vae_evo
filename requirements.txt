@@ -1,0 +1,5 @@
+numpy>=1.21.0
+torch>=1.9.0
+tqdm>=4.62.0
+pymoo>=0.6.0
+evotorch>=0.6.0
